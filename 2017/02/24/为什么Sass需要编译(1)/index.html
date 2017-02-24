@@ -84,12 +84,16 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="盐鸽的独立博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;很多刚接触Sass的同学，或许和我有一样的疑问，那就是Sass为什么需要编译？在很多人眼中，CSS并不能算是一种编程语言，它只是一行行的属性描述，写起来相当的费事，而且代码难以组织和维护，对于有强迫症的同学来说，写起来更是不爽。这时有人为了更方便的操作它们，就给它们加入了一些编程元素，让CSS能像其他程序语言一样可以做一些">
+<meta property="og:type" content="article">
+<meta property="og:title" content="为什么Sass需要编译">
+<meta property="og:url" content="http://yoursite.com/2017/02/24/为什么Sass需要编译(1)/index.html">
 <meta property="og:site_name" content="盐鸽的独立博客">
+<meta property="og:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;很多刚接触Sass的同学，或许和我有一样的疑问，那就是Sass为什么需要编译？在很多人眼中，CSS并不能算是一种编程语言，它只是一行行的属性描述，写起来相当的费事，而且代码难以组织和维护，对于有强迫症的同学来说，写起来更是不爽。这时有人为了更方便的操作它们，就给它们加入了一些编程元素，让CSS能像其他程序语言一样可以做一些">
+<meta property="og:updated_time" content="2017-02-24T02:32:33.205Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="盐鸽的独立博客">
+<meta name="twitter:title" content="为什么Sass需要编译">
+<meta name="twitter:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;很多刚接触Sass的同学，或许和我有一样的疑问，那就是Sass为什么需要编译？在很多人眼中，CSS并不能算是一种编程语言，它只是一行行的属性描述，写起来相当的费事，而且代码难以组织和维护，对于有强迫症的同学来说，写起来更是不爽。这时有人为了更方便的操作它们，就给它们加入了一些编程元素，让CSS能像其他程序语言一样可以做一些">
 
 
 
@@ -110,9 +114,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/02/24/为什么Sass需要编译(1)/"/>
 
-  <title> 盐鸽的独立博客 </title>
+  <title> 为什么Sass需要编译 | 盐鸽的独立博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="">
@@ -133,9 +137,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -212,9 +214,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -234,10 +236,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/02/24/为什么Sass需要编译(1)/" itemprop="url">
-                  为什么Sass需要编译
-                </a>
+                为什么Sass需要编译
               
             
           </h1>
@@ -277,20 +276,22 @@
       
 
       
-        
-          
-            <p>　　<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;很多刚接触Sass的同学，或许和我有一样的疑问，那就是Sass为什么需要编译？在很多人眼中，CSS并不能算是一种编程语言，它只是一行行的属性描述，写起来相当的费事，而且代码难以组织和维护，对于有强迫症的同学来说，写起来更是不爽。这时有人为了更方便的操作它们，就给它们加入了一些编程元素，让CSS能像其他程序语言一样可以做一些预定的处理。这样一来，就有了CSS预处器（CSS Preprocessor）。<br>　　CSS预处理器定义了一种新的语言，其基本思想是，用一种专门的编程语言，为CSS增加了一些编程的特性，将CSS作为目标生成文件，然后开发者就只要使用这种语言进行编码工作。通俗的说，CSS预处理器用一种专门的编程语言，进行Web页面样式设计，然后再编译成正常的CSS文件，以供项目使用。CSS预处理器为CSS增加一些编程的特性，无需考虑浏览器的兼容性问题，例如你可以在CSS中使用变量、简单的逻辑程序、函数等等在编程语言中的一些基本特性，可以让你的CSS更加简洁、适应性更强、可读性更佳，更易于代码的维护等诸多好处。<br>　　<br>　　  CSS预处理器技术已经非常的成熟，而且也涌现出了很多种不同的CSS预处理器语言，比如说：Sass（SCSS）、LESS、Stylus、Turbine、Swithch CSS、CSS Cacheer、DT CSS等。但是，各浏览器是无法直接解析.scss或者.sass文件。换句话说，在Web实际调用当中，还是需要调用css文件。这个问题也困扰了很多初学者，常常有人会问，使用Sass进行开发，那么是不是直接通过<link>引用.scss或.sass文件呢？那么这里告诉大家，在项目中还是引用.css文件，Sass只不过是做为一个预处理工具，提前帮你做事情，只有你需要的时候，他才能功效。这样一来，在Sass开发之后，要使用写好的东西，让Web页面能调用，就得经过一个过程，这个过程就是Sass编译过程。Sass的编译有多种方法，这里就不再赘述。</p>
+        <p>　　<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;很多刚接触Sass的同学，或许和我有一样的疑问，那就是Sass为什么需要编译？在很多人眼中，CSS并不能算是一种编程语言，它只是一行行的属性描述，写起来相当的费事，而且代码难以组织和维护，对于有强迫症的同学来说，写起来更是不爽。这时有人为了更方便的操作它们，就给它们加入了一些编程元素，让CSS能像其他程序语言一样可以做一些预定的处理。这样一来，就有了CSS预处器（CSS Preprocessor）。<br>　　CSS预处理器定义了一种新的语言，其基本思想是，用一种专门的编程语言，为CSS增加了一些编程的特性，将CSS作为目标生成文件，然后开发者就只要使用这种语言进行编码工作。通俗的说，CSS预处理器用一种专门的编程语言，进行Web页面样式设计，然后再编译成正常的CSS文件，以供项目使用。CSS预处理器为CSS增加一些编程的特性，无需考虑浏览器的兼容性问题，例如你可以在CSS中使用变量、简单的逻辑程序、函数等等在编程语言中的一些基本特性，可以让你的CSS更加简洁、适应性更强、可读性更佳，更易于代码的维护等诸多好处。<br>　　<br>　　  CSS预处理器技术已经非常的成熟，而且也涌现出了很多种不同的CSS预处理器语言，比如说：Sass（SCSS）、LESS、Stylus、Turbine、Swithch CSS、CSS Cacheer、DT CSS等。但是，各浏览器是无法直接解析.scss或者.sass文件。换句话说，在Web实际调用当中，还是需要调用css文件。这个问题也困扰了很多初学者，常常有人会问，使用Sass进行开发，那么是不是直接通过<link>引用.scss或.sass文件呢？那么这里告诉大家，在项目中还是引用.css文件，Sass只不过是做为一个预处理工具，提前帮你做事情，只有你需要的时候，他才能功效。这样一来，在Sass开发之后，要使用写好的东西，让Web页面能调用，就得经过一个过程，这个过程就是Sass编译过程。Sass的编译有多种方法，这里就不再赘述。</p>
 
-          
-        
       
     </div>
 
     <div>
       
+        
+
+      
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
@@ -298,113 +299,32 @@
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/08/31/hello-world/" rel="next" title="小火车开起来">
+                <i class="fa fa-chevron-left"></i> 小火车开起来
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2016/08/31/hello-world/" itemprop="url">
-                  小火车开起来
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Diposting di</span>
-            <time itemprop="dateCreated" datetime="2016-08-31T14:41:03+08:00" content="2016-08-31">
-              2016-08-31
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>污污污</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -412,6 +332,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -431,8 +355,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Daftar Isi
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Ikhtisar
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/source/uploads/pic.png"
@@ -468,6 +401,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">Posting ini tidak memiliki Daftar Isi</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -564,6 +508,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
