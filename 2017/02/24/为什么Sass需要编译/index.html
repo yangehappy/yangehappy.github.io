@@ -84,16 +84,16 @@
 
 
 
-<meta name="description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;很多刚接触Sass的同学，或许和我有一样的疑问，那就是Sass为什么需要编译？在很多人眼中，CSS并不能算是一种编程语言，它只是一行行的属性描述，写起来相当的费事，而且代码难以组织和维护，对于有强迫症的同学来说，写起来更是不爽。这时有人为了更方便的操作它们，就给它们加入了一些编程元素，让CSS能像其他程序语言一样可以做一些">
+<meta name="description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;很多刚接触Sass的同学，或许和我有一样的疑问，那就是Sass为什么需要编译？在很多人眼中，CSS并不能算是一种编程语言，它只是一行行的属性描述，写起来相当的费事，而且代码难以组织和维护，对于有强迫症的同学来说，写起来更是不爽。这时有人为了更方便的操作它们，就给它们加入了一些编程元素，让CSS能像其他程序语言一样可以做一些预定">
 <meta property="og:type" content="article">
 <meta property="og:title" content="为什么Sass需要编译">
 <meta property="og:url" content="http://yoursite.com/2017/02/24/为什么Sass需要编译/index.html">
 <meta property="og:site_name" content="盐鸽的独立博客">
-<meta property="og:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;很多刚接触Sass的同学，或许和我有一样的疑问，那就是Sass为什么需要编译？在很多人眼中，CSS并不能算是一种编程语言，它只是一行行的属性描述，写起来相当的费事，而且代码难以组织和维护，对于有强迫症的同学来说，写起来更是不爽。这时有人为了更方便的操作它们，就给它们加入了一些编程元素，让CSS能像其他程序语言一样可以做一些">
-<meta property="og:updated_time" content="2017-02-24T10:59:22.512Z">
+<meta property="og:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;很多刚接触Sass的同学，或许和我有一样的疑问，那就是Sass为什么需要编译？在很多人眼中，CSS并不能算是一种编程语言，它只是一行行的属性描述，写起来相当的费事，而且代码难以组织和维护，对于有强迫症的同学来说，写起来更是不爽。这时有人为了更方便的操作它们，就给它们加入了一些编程元素，让CSS能像其他程序语言一样可以做一些预定">
+<meta property="og:updated_time" content="2017-02-24T11:09:31.298Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="为什么Sass需要编译">
-<meta name="twitter:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;很多刚接触Sass的同学，或许和我有一样的疑问，那就是Sass为什么需要编译？在很多人眼中，CSS并不能算是一种编程语言，它只是一行行的属性描述，写起来相当的费事，而且代码难以组织和维护，对于有强迫症的同学来说，写起来更是不爽。这时有人为了更方便的操作它们，就给它们加入了一些编程元素，让CSS能像其他程序语言一样可以做一些">
+<meta name="twitter:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;很多刚接触Sass的同学，或许和我有一样的疑问，那就是Sass为什么需要编译？在很多人眼中，CSS并不能算是一种编程语言，它只是一行行的属性描述，写起来相当的费事，而且代码难以组织和维护，对于有强迫症的同学来说，写起来更是不爽。这时有人为了更方便的操作它们，就给它们加入了一些编程元素，让CSS能像其他程序语言一样可以做一些预定">
 
 
 
@@ -276,7 +276,7 @@
       
 
       
-        <p>　　<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;很多刚接触Sass的同学，或许和我有一样的疑问，那就是Sass为什么需要编译？在很多人眼中，CSS并不能算是一种编程语言，它只是一行行的属性描述，写起来相当的费事，而且代码难以组织和维护，对于有强迫症的同学来说，写起来更是不爽。这时有人为了更方便的操作它们，就给它们加入了一些编程元素，让CSS能像其他程序语言一样可以做一些预定的处理。这样一来，就有了CSS预处器（CSS Preprocessor）。<br>　　CSS预处理器定义了一种新的语言，其基本思想是，用一种专门的编程语言，为CSS增加了一些编程的特性，将CSS作为目标生成文件，然后开发者就只要使用这种语言进行编码工作。通俗的说，CSS预处理器用一种专门的编程语言，进行Web页面样式设计，然后再编译成正常的CSS文件，以供项目使用。CSS预处理器为CSS增加一些编程的特性，无需考虑浏览器的兼容性问题，例如你可以在CSS中使用变量、简单的逻辑程序、函数等等在编程语言中的一些基本特性，可以让你的CSS更加简洁、适应性更强、可读性更佳，更易于代码的维护等诸多好处。<br>　　CSS预处理器技术已经非常的成熟，而且也涌现出了很多种不同的CSS预处理器语言，比如说：Sass（SCSS）、LESS、Stylus、Turbine、Swithch CSS、CSS Cacheer、DT CSS等。但是，各浏览器是无法直接解析.scss或者.sass文件。换句话说，在Web实际调用当中，还是需要调用css文件。这个问题也困扰了很多初学者，常常有人会问，使用Sass进行开发，那么是不是直接通过<link>引用.scss或.sass文件呢？那么这里告诉大家，在项目中还是引用.css文件，Sass只不过是做为一个预处理工具，提前帮你做事情，只有你需要的时候，他才能功效。这样一来，在Sass开发之后，要使用写好的东西，让Web页面能调用，就得经过一个过程，这个过程就是Sass编译过程。Sass的编译有多种方法，这里就不再赘述。</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;很多刚接触Sass的同学，或许和我有一样的疑问，那就是Sass为什么需要编译？在很多人眼中，CSS并不能算是一种编程语言，它只是一行行的属性描述，写起来相当的费事，而且代码难以组织和维护，对于有强迫症的同学来说，写起来更是不爽。这时有人为了更方便的操作它们，就给它们加入了一些编程元素，让CSS能像其他程序语言一样可以做一些预定的处理。这样一来，就有了CSS预处器（CSS Preprocessor）。<br>　　CSS预处理器定义了一种新的语言，其基本思想是，用一种专门的编程语言，为CSS增加了一些编程的特性，将CSS作为目标生成文件，然后开发者就只要使用这种语言进行编码工作。通俗的说，CSS预处理器用一种专门的编程语言，进行Web页面样式设计，然后再编译成正常的CSS文件，以供项目使用。CSS预处理器为CSS增加一些编程的特性，无需考虑浏览器的兼容性问题，例如你可以在CSS中使用变量、简单的逻辑程序、函数等在编程语言中的一些基本特性，可以让你的CSS更加简洁、适应性更强、可读性更佳，更易于代码的维护等诸多好处。<br>　　CSS预处理器技术已经非常的成熟，而且也涌现出了很多种不同的CSS预处理器语言，比如说：Sass（SCSS）、LESS、Stylus、Turbine、Swithch CSS、CSS Cacheer、DT CSS等。但是，各浏览器是无法直接解析.scss或者.sass文件。换句话说，在Web实际调用当中，还是需要调用css文件。这个问题也困扰了很多初学者，常常有人会问，使用Sass进行开发，那么是不是直接通过<link>引用.scss或.sass文件呢？那么这里告诉大家，在项目中还是引用.css文件，Sass只不过是做为一个预处理工具，提前帮你做事情，只有你需要的时候，他才能起作用。这样一来，在Sass开发之后，要使用写好的东西，让Web页面能调用，就得经过一个过程，这个过程就是Sass编译过程。Sass的编译有多种方法，这里就不再赘述。</p>
 
       
     </div>
