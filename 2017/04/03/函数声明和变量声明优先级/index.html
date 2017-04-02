@@ -82,19 +82,22 @@
 
 
 
-<meta name="description" content="关于我
-12345678&amp;#123;  &amp;quot;name&amp;quot; : &amp;quot;huhaikui&amp;quot;,  &amp;quot;gender&amp;quot;:&amp;quot;male&amp;quot;,  &amp;quot;main&amp;quot; : &amp;quot;Front-end Development Engineer&amp;quot;,  &amp;quot;description&amp;quot; : &amp;quot;used">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta name="description" content="&amp;ensp;&amp;ensp;先说结论：函数声明和变量声明都会被提升，但是函数会优先被提升，而且不会被变量声明覆盖，但是会被变量初始化覆盖。&amp;ensp;&amp;ensp;下面通过代码来证实：
+12345function foo() &amp;#123;		console.log(1);	&amp;#125;;	var foo;	console.log(foo);
+在控制台打印的结果是function foo() {">
+<meta property="og:type" content="article">
+<meta property="og:title" content="盐鸽的独立博客">
+<meta property="og:url" content="http://yoursite.com/2017/04/03/函数声明和变量声明优先级/index.html">
 <meta property="og:site_name" content="盐鸽的独立博客">
-<meta property="og:description" content="关于我
-12345678&amp;#123;  &amp;quot;name&amp;quot; : &amp;quot;huhaikui&amp;quot;,  &amp;quot;gender&amp;quot;:&amp;quot;male&amp;quot;,  &amp;quot;main&amp;quot; : &amp;quot;Front-end Development Engineer&amp;quot;,  &amp;quot;description&amp;quot; : &amp;quot;used">
-<meta property="og:updated_time" content="2017-03-30T03:37:23.067Z">
+<meta property="og:description" content="&amp;ensp;&amp;ensp;先说结论：函数声明和变量声明都会被提升，但是函数会优先被提升，而且不会被变量声明覆盖，但是会被变量初始化覆盖。&amp;ensp;&amp;ensp;下面通过代码来证实：
+12345function foo() &amp;#123;		console.log(1);	&amp;#125;;	var foo;	console.log(foo);
+在控制台打印的结果是function foo() {">
+<meta property="og:updated_time" content="2017-04-02T17:44:29.158Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="关于我
-12345678&amp;#123;  &amp;quot;name&amp;quot; : &amp;quot;huhaikui&amp;quot;,  &amp;quot;gender&amp;quot;:&amp;quot;male&amp;quot;,  &amp;quot;main&amp;quot; : &amp;quot;Front-end Development Engineer&amp;quot;,  &amp;quot;description&amp;quot; : &amp;quot;used">
+<meta name="twitter:title" content="盐鸽的独立博客">
+<meta name="twitter:description" content="&amp;ensp;&amp;ensp;先说结论：函数声明和变量声明都会被提升，但是函数会优先被提升，而且不会被变量声明覆盖，但是会被变量初始化覆盖。&amp;ensp;&amp;ensp;下面通过代码来证实：
+12345function foo() &amp;#123;		console.log(1);	&amp;#125;;	var foo;	console.log(foo);
+在控制台打印的结果是function foo() {">
 
 
 
@@ -115,15 +118,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/about/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/04/03/函数声明和变量声明优先级/"/>
 
-  <title>
-  
-
-  
-    about | 盐鸽的独立博客
-  
-</title>
+  <title>  | 盐鸽的独立博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -144,7 +141,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -244,11 +241,117 @@
 
   <div id="posts" class="posts-expand">
     
-    
-      <p><strong>关于我</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  &quot;name&quot; : &quot;huhaikui&quot;,</div><div class="line">  &quot;gender&quot;:&quot;male&quot;,</div><div class="line">  &quot;main&quot; : &quot;Front-end Development Engineer&quot;,</div><div class="line">  &quot;description&quot; : &quot;used to be a policeman&quot;,</div><div class="line">  &quot;address&quot; : &quot;Beijing&quot;,</div><div class="line">  &quot;future&quot; : &quot;All stack Engineer&quot;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2017-04-03T01:45:16+08:00" content="2017-04-03">
+              2017-04-03
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>&ensp;&ensp;先说结论：函数声明和变量声明都会被提升，但是函数会优先被提升，而且不会被变量声明覆盖，但是会被变量初始化覆盖。<br>&ensp;&ensp;下面通过代码来证实：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">function foo() &#123;</div><div class="line">		console.log(1);</div><div class="line">	&#125;;</div><div class="line">	var foo;</div><div class="line">	console.log(foo);</div></pre></td></tr></table></figure>
+<p>在控制台打印的结果是function foo() {<br>        console.log(1);<br>    }。尽管预解析阶段foo函数被提升到了作用域顶部，var foo紧随其后，但是因为var foo是重复的声明,因此被忽略掉了，最终打印出的函数foo。<br>&ensp;&ensp;那么变量声明并且初始化它，会发生什么情况呢？请看下面的代码：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">function foo() &#123;</div><div class="line">			console.log(1);</div><div class="line">		&#125;;</div><div class="line">		var foo = 2;</div><div class="line">		console.log(foo);</div></pre></td></tr></table></figure>
+<p>&ensp;&ensp;答案是什么？答案是2。预解析阶段发生的事情与上面的代码一模一样，唯一的不同是foo=2留在了原地，它覆盖了foo的值，此时foo变成了2。<br>&ensp;&ensp;注意：我们要尽量避免重复声明，特别是当普通的var声明和函数声明混合在一起的时候，否则会引起很多危险的问题！</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/23/克隆JSON对象/" rel="next" title="克隆JSON对象">
+                <i class="fa fa-chevron-left"></i> 克隆JSON对象
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -280,8 +383,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/11.jpeg"
@@ -351,6 +463,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">This post does not have a Table of Contents</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -449,6 +572,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
