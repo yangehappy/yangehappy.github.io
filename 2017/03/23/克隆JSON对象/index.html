@@ -328,13 +328,13 @@
 
       
         <p>一句话克隆JSON对象</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var cloneData = JSON.parse(JSON .stringify(data));</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> cloneData = <span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span> .stringify(data));</div></pre></td></tr></table></figure>
 <p>假设JSON对象为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">var a = &#123;</div><div class="line">    r: 1,</div><div class="line">    s: &#123; </div><div class="line">        o: 2,</div><div class="line">        p: 5,</div><div class="line">        q: 8&#125;,</div><div class="line">    t: [1, 3, 5, 7, 9]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">var</span> <span class="selector-tag">a</span> = &#123;</div><div class="line">    r: <span class="number">1</span>,</div><div class="line">    s: &#123; </div><div class="line">        o: <span class="number">2</span>,</div><div class="line">        <span class="selector-tag">p</span>: <span class="number">5</span>,</div><div class="line">        <span class="selector-tag">q</span>: <span class="number">8</span>&#125;,</div><div class="line">    t: [<span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">9</span>]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>此时我们将a赋值给b</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var b = a;</div></pre></td></tr></table></figure>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">var b</span> = a;</div></pre></td></tr></table></figure>
 <p>此时如果修改b，那么a也会随之改变,因为他们的指向地址是一样的。那么如何克隆a呢,<br>正确的做法是：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var c = JSON.parse(JSON.stringify(a))</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> c = <span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(a))</div></pre></td></tr></table></figure>
 <p>这样子我们就拿到了一个克隆的json对象，其原理是先把json对象转换成字符串然后再转换成json对象，这样子他的地址指向就不一样了，从而实现克隆。</p>
 
       
