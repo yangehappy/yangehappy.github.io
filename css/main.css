@@ -906,7 +906,7 @@ pre .javascript .function {
   vertical-align: top;
   line-height: 36px;
   font-size: 30px;
-  font-weight: normal;
+  font-weight: 500;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .site-subtitle {
@@ -1563,7 +1563,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #8b4aff;
+  background: #d5d0cb;
 }
 .links-of-blogroll {
   font-size: 13px;
