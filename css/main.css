@@ -905,13 +905,13 @@ pre .javascript .function {
   display: inline-block;
   vertical-align: top;
   line-height: 36px;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: normal;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .site-subtitle {
   margin-top: 10px;
-  font-size: 13px;
+  font-size: 16px;
   color: #999;
 }
 .use-motion .brand {
@@ -1563,7 +1563,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #00dbff;
+  background: #8b4aff;
 }
 .links-of-blogroll {
   font-size: 13px;
