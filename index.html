@@ -317,7 +317,7 @@
         
           
           电脑出了点问题，重新配置完vue全家桶后，使用hexo d命令更新博客突然出现下面的问题：  
-$ hexo dINFO  Deploying: gitINFO  Clearing .deploy_git folder…INFO  Copying files from public folder…f
+$ hexo dINFO  Deploying: gitINFO  Clearing .deploy_git folder…INFO  Copying files from public folder…fatal: bad config file line 1 in .git/configFATAL Something’s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.htmlErro
           ...
 
           <div class="post-more-link text-center">
@@ -436,7 +436,8 @@ $ hexo dINFO  Deploying: gitINFO  Clearing .deploy_git folder…INFO  Copying fi
         
           
           &ensp;&ensp;先说结论：函数声明和变量声明都会被提升，但是函数会优先被提升，而且不会被变量声明覆盖，但是会被变量初始化覆盖。&ensp;&ensp;下面通过代码来证实：
-12345function foo() &#123;		console.log(1);	&#125;;	var foo;
+12345function foo() &#123;		console.log(1);	&#125;;	var foo;	console.log(foo);
+在控制台打印的结果是function foo() {        console.log(1);    }。尽管预解析阶段foo函数被提升到了作用域顶部，var foo紧随其后，但是因为var foo是重复的声明,因此被忽略掉了，最终打印出的函数foo。&en
           ...
 
           <div class="post-more-link text-center">
@@ -557,7 +558,11 @@ $ hexo dINFO  Deploying: gitINFO  Clearing .deploy_git folder…INFO  Copying fi
           一句话克隆JSON对象
 1var cloneData = JSON.parse(JSON .stringify(data));
 假设JSON对象为：
-12345678var a = &#123;    r: 1,    s: &#123;         o: 2,        p: 5,    
+12345678var a = &#123;    r: 1,    s: &#123;         o: 2,        p: 5,        q: 8&#125;,    t: [1, 3, 5, 7, 9]&#125;
+此时我们将a赋值给b
+1var b = a;
+此时如果修改b，那么a也会随之改变,因为他们的指向地址是一样的。那么如何克隆a呢,正确的做法是：
+1var c = JSON.parse(JSON.stringify
           ...
 
           <div class="post-more-link text-center">
