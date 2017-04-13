@@ -727,7 +727,7 @@ pre .javascript .function {
   padding: 0 20px;
   font-size: 14px;
   color: #f00;
-  background: #f00;
+  background: #fff;
   border: 2px solid #222;
   text-decoration: none;
   border-radius: 0;
@@ -1563,7 +1563,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d5d0cb;
+  background: #2ae89f;
 }
 .links-of-blogroll {
   font-size: 13px;
