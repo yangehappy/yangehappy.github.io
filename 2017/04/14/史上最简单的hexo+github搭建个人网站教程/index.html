@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>史上最简单的hexo+github搭建个人网站教程 | 盐鸽的独立博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    
+      <link rel="icon" href="/favicon.png">
+    
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="/js/google-code-prettify/tomorrow-night-eighties.min.css">
+
+  </head>
+
+  <body>
+
+<header>
+	<a id="logo" href="/" title="盐鸽的独立博客">
+	<img src="/favicon.png" alt="盐鸽的独立博客"></a>
+	
+	
+		<!--搜索栏-->
+		<i class="js-toggle-search iconfont icon-search"></i>
+
+
+<form class="js-search search-form search-form--modal" method="get" action="http://gushi.li" role="search">
+	<div class="search-form__inner">
+		<div>
+			<i class="iconfont icon-search"></i>
+			<input class="text-input" placeholder="Enter Key..." type="search">
+		</div>
+	</div>
+</form>
+	
+
+	
+		<!--侧边导航栏-->
+		<a id="nav-toggle" href="#"><span></span></a>
+
+<nav>
+	<div class="menu-top-container">
+		<ul id="menu-top" class="menu">
+			
+				
+				<li class="current-menu-item">
+					<a href="http://weibo.com/yangesunshine/" target="_blank">Weibo</a>
+				</li>
+			
+		</ul>
+	</div>
+</nav>
+	
+
+</header>
+<div class="m-header ">
+	<section id="hero1" class="hero">
+		<div class="inner">
+		</div>
+	</section>
+	
+		<figure class="top-image" data-enable=true></figure>
+	
+</div>
+
+<!--文章列表-->
+<div class="wrapper">
+  
+    <!--文章-->
+<article>
+	
+  
+    <h1 class="post-title" itemprop="name">
+      史上最简单的hexo+github搭建个人网站教程
+    </h1>
+  
+
+	<div class='post-body mb'>
+		<p>好吧，我承认我标题党了。自从去年夏天搭好了这个网站，给不少人安利过hexo,并成功的把他们带进了坑了。最近越发觉得有必要写个简单教程，大神请自动略过，本教程主要针对小白。<br>就像造房子需要先准备钢筋水泥等原材料一样，使用hexo搭建个人站点需要的原材料是nodejs+git+github。因为hexo是基于nodejs的，所以nodejs是必须要安装的。git是个版本管理软件，我们可以用它来管理我们的hexo文件，平时的维护和博客文章的上传都需要用到它。即使你对他们都不了解，没关系，安装好nodejs和git后只要按照以下步骤就可以搭建好一个个人站点了。这里就不介绍nodejs和git的安装了，不知道怎么下载安装的同学请自行谷歌。</p>
+<h3 id="本地操作"><a href="#本地操作" class="headerlink" title="本地操作"></a>本地操作</h3><p>假设现在你的电脑上装好了nodejs和git，在电脑上任意磁盘新建一个文件夹(名字可以按自己喜好来命名，假设这里我们命名为myblog)，这个文件夹用来存放我们搭建的hexo博客文件。双击打开myblog文件夹，进入后右键单击选择git bash,打开后是下面这样子的，它是git的命令行操作界面。<br><img src="http://i4.buimg.com/524586/1af43ccc1daf40a1s.png" alt="Markdown"><br>接着在git中输入npm install -g hexo安装hexo，等待一段时间后出现$和跳动的光标代表安装完成。输入hexo -v查看安装的hexo版本<br><img src="http://i2.muimg.com/524586/f169163955dc76a6s.png" alt="Markdown"><br>ok，下面接着键入hexo init来初始化myblog文件夹，当出现下图所示界面代表hexo博客在本地安装完成<br><img src="http://i2.muimg.com/524586/d7fc7989d44d071bs.png" alt="Markdown"><br>键入hexo s，在本地生成页面，提示在浏览器输入<a href="http://localhost:4000/查看博客页面，注意如果你电脑中的其他的程序占用了你的4000端口，你就无法打开网页，需要手动修改端口。hexo默认安装的是landscape主题，所以在浏览器中打开是这样的，当你看到这个页面，恭喜你，你已经成功的在本地搭建起了自己的第一个博客。" target="_blank" rel="external">http://localhost:4000/查看博客页面，注意如果你电脑中的其他的程序占用了你的4000端口，你就无法打开网页，需要手动修改端口。hexo默认安装的是landscape主题，所以在浏览器中打开是这样的，当你看到这个页面，恭喜你，你已经成功的在本地搭建起了自己的第一个博客。</a><br><img src="http://i4.buimg.com/524586/80ef7ec522bcb380s.png" alt="Markdown">   </p>
+<h3 id="github远程操作"><a href="#github远程操作" class="headerlink" title="github远程操作"></a>github远程操作</h3><p>下面开始github上的操作，首先新建一个Repository，并命名为username.github.io，因为github默认一个账号只能绑定一个GitHub Pages，所以仓库的命名只能按github规定的格式来写，即你的github用户名.github.io。进入该仓库，找到Settings选项，点进去找到GitHub Pages，会看到 Your site is published at <a href="https://yangcong1.github.io/，意思是你的github" target="_blank" rel="external">https://yangcong1.github.io/，意思是你的github</a> pages启用了，并且部署在上面的网站。  </p>
+<h3 id="返回本地操作"><a href="#返回本地操作" class="headerlink" title="返回本地操作"></a>返回本地操作</h3><p>找到myblog目录下的_config.yml文件，并修改最后面的deploy，将其修改为<br>    deploy:<br>      type: git<br>      repository:<br>           github: <a href="https://github.com/username/username.github.io" target="_blank" rel="external">https://github.com/username/username.github.io</a></p>
+<pre><code>branch: master  
+</code></pre><p>修改完后执行命令:<br>    npm install hexo-deployer-git –save<br>接着将本地文件部署到github仓库:<br>hexo d  </p>
+<h3 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h3><p>现在在浏览器中输入<a href="https://yourname.github.io/就可以访问你的博客了。" target="_blank" rel="external">https://yourname.github.io/就可以访问你的博客了。</a></p>
+
+	</div>
+	<div class="meta split">
+		
+			<span>本文总阅读量 <span id="busuanzi_value_page_pv"></span> 次</span>
+		
+		<time class="post-date" datetime="2017-04-14T05:22:45.554Z" itemprop="datePublished">2017-04-14</time>
+	</div>
+</article>
+
+<!--评论-->
+
+	
+<div class="ds-thread" data-thread-key="史上最简单的hexo+github搭建个人网站教程" data-title="史上最简单的hexo+github搭建个人网站教程" data-url="http://yoursite.com/2017/04/14/史上最简单的hexo+github搭建个人网站教程/"></div>
+<script type="text/javascript">
+
+var duoshuoQuery = {short_name:"yumemor"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0]
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+</script>
+
+
+  
+</div>
+
+
+  <svg id="bigTriangleColor" width="100%" height="40" viewBox="0 0 100 102" preserveAspectRatio="none">
+    <path d="M0 0 L50 100 L100 0 Z"></path>
+  </svg>
+
+  
+
+
+  <div class="wrapper"></div>
+
+
+
+
+
+<div class="fat-footer">
+	<div class="wrapper">
+		<div class="layout layout--center">
+			<div class="layout__item palm-mb">
+				<div class="media">
+					<img class="headimg" src='http://i1.piimg.com/524586/b05b241a88a78b2cs.jpg' alt='盐鸽'>
+					<div class="media__body">
+						<h4>盐鸽的独立博客</h4>
+						<p class='site-description'>the trouble is that you think you have time</p>
+					</div>
+				</div>
+				<div class="author-contact">
+					<ul>
+						
+							
+							<li>
+				        		<a href="http://weibo.com/yangesunshine/" target="_blank">
+				        			
+				        				<i class="iconfont icon-weibo"></i>
+				        			
+				        		</a>
+				        	</li>
+						
+							
+							<li>
+				        		<a href="https://github.com/yangehappy" target="_blank">
+				        			
+				        				<i class="iconfont icon-github"></i>
+				        			
+				        		</a>
+				        	</li>
+						
+							
+							<li>
+				        		<a href="https://twitter.com/yangehappy1" target="_blank">
+				        			
+				        				<i class="iconfont icon-twitter"></i>
+				        			
+				        		</a>
+				        	</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="footer" role="contentinfo">
+	<div class="wrapper wrapper--wide split split--responsive">
+		
+			<span>本站总访问量 <span id="busuanzi_value_site_pv"></span> 次, 访客数 <span id="busuanzi_value_site_uv"></span> 人次</span>
+		
+		<span>Theme by <a href="http://github.com/yumemor">Yumemor</a>. Powered by <a href="http://hexo.io">Hexo</a></span>
+	</div>
+</footer>
+
+	<!-－这里导入了 lib.js 里面涵盖了 jQuery 等框架 所以注释掉-->
+	<!--<script src="http://lib.sinaapp.com/js/jquery/2.0/jquery.min.js"></script>-->
+	<script src="/js/lib.js"></script>
+	<script src="/js/google-code-prettify/prettify.js"></script>
+	<script src="/js/module.js"></script>
+	<script src="/js/script.js"></script>
+	
+		<script async src="http://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+	<script type='text/javascript'>
+		//代码高亮
+		$(document).ready(function(){
+	 		$('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+   			prettyPrint();
+		});
+	</script>
+	</body>
+</html>
